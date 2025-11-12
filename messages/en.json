@@ -1,5 +1,7 @@
 {
-    "home": {
-        "title": "Welcome"
+    "modeSelector": {
+        "subtitle": "Choose your experience",
+        "story": "Story Mode",
+        "classic": "Classic Mode"
     }
 }

@@ -1,0 +1,149 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.contentWrapper {
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(34, 211, 238), rgb(168, 85, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitleEN {
+  font-family: 'Orbitron', 'Courier New', monospace;
+}
+
+.subtitleAR {
+  font-family: 'Cairo', sans-serif;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .buttonContainer {
+    flex-direction: row;
+  }
+}
+
+.button {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 2px solid;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  flex: 1;
+  width: 14rem;
+}
+
+.buttonContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.buttonIcon {
+  width: 3rem;
+  height: 3rem;
+  stroke-width: 1.5;
+}
+
+.buttonText {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.buttonTextEN {
+  font-family: 'Orbitron', 'Courier New', monospace;
+}
+
+.buttonTextAR {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Story Button */
+.storyButton {
+  border-color: rgba(34, 211, 238, 0.5);
+}
+
+.storyButton:hover {
+  border-color: rgb(34, 211, 238);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+}
+
+.storyIcon {
+  color: rgb(34, 211, 238);
+}
+
+.storyText {
+  color: rgb(165, 243, 252);
+}
+
+.storyGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.1) 0%, transparent 100%);
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.storyButton:hover .storyGradient {
+  opacity: 1;
+}
+
+/* Classic Button */
+.classicButton {
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.classicButton:hover {
+  border-color: rgb(168, 85, 247);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+}
+
+.classicIcon {
+  color: rgb(168, 85, 247);
+}
+
+.classicText {
+  color: rgb(196, 181, 253);
+}
+
+.classicGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, transparent 100%);
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.classicButton:hover .classicGradient {
+  opacity: 1;
+}

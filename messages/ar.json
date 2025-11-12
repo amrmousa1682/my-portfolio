@@ -1,5 +1,7 @@
 {
-    "home": {
-        "title": "مرحبًا بكم"
+    "modeSelector": {
+        "subtitle": "اختر تجربتك",
+        "story": "وضع القصة",
+        "classic": "الوضع الكلاسيكي"
     }
 }
