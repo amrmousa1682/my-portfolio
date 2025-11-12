@@ -1,0 +1,82 @@
+.container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #050505, #0A0A0A, #0F0F0F);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-image:
+    linear-gradient(to right, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.linesContainer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.cyanLine {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgb(34, 211, 238), transparent);
+  opacity: 0.3;
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.violetLine {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgb(139, 92, 246), transparent);
+  opacity: 0.3;
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite 1s;
+}
+
+.cyanGlow {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(34, 211, 238, 0.1);
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.violetGlow {
+  position: absolute;
+  bottom: 25%;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite 2s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
