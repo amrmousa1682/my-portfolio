@@ -1,7 +1,157 @@
 {
-    "modeSelector": {
-        "subtitle": "اختر تجربتك",
-        "story": "وضع القصة",
-        "classic": "الوضع الكلاسيكي"
+  "modeSelector": {
+    "subtitle": "اختر تجربتك",
+    "story": "وضع القصة",
+    "classic": "الوضع الكلاسيكي"
+  },
+  "portfolio": {
+    "header": {
+      "backButton": "رجوع",
+      "modeLabel": "الوضع الكلاسيكي"
+    },
+    "hero": {
+      "name": "عمرو موسى",
+      "title": "مهندس Backend",
+      "subtitle": "بناء أنظمة قابلة للتطوير وحلول مدعومة بالذكاء الاصطناعي"
+    },
+    "about": {
+      "title": "عنّي",
+      "text": "مهندس Backend شغوف بخبرة في بناء أنظمة قوية وقابلة للتطوير. متخصص في هندسة السحابة وتصميم API ودمج التعلم الآلي. ملتزم بكتابة كود نظيف وقابل للصيانة وحل التحديات التقنية المعقدة."
+    },
+    "experience": {
+      "title": "الخبرة",
+      "items": [
+        {
+          "company": "شركة حلول التكنولوجيا",
+          "position": "مهندس Backend أول",
+          "period": "2022 - الحاضر",
+          "description": "قيادة تطوير معمارية الخدمات الصغيرة، تحسين أداء API بنسبة 40٪، وتدريب المطورين الجدد. تصميم حلول أصلية في السحابة تدعم أكثر من 50 ألف مستخدم نشط يومياً."
+        },
+        {
+          "company": "أنظمة السحابة",
+          "position": "مهندس Backend",
+          "period": "2020 - 2022",
+          "description": "تصميم وتنفيذ حلول قاعدة بيانات قابلة للتطوير، نشر التطبيقات على AWS، وإنشاء خطوط أنابيب CI/CD. تقليل وقت النشر بنسبة 60٪ من خلال الأتمتة."
+        },
+        {
+          "company": "مختبرات StartUp",
+          "position": "مطور Backend مبتدئ",
+          "period": "2018 - 2020",
+          "description": "تطوير واجهات برمجة تطبيقات RESTful باستخدام Node.js و Python، العمل مع MongoDB و PostgreSQL، والمساهمة في تحسين Backend. زيادة معدل الإنتاجية بنسبة 35٪."
+        }
+      ]
+    },
+    "skills": {
+      "title": "المهارات",
+      "categories": [
+        {
+          "name": "لغات البرمجة",
+          "items": ["Python", "Node.js", "TypeScript", "Go"]
+        },
+        {
+          "name": "قواعد البيانات",
+          "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL"]
+        },
+        {
+          "name": "السحابة و DevOps",
+          "items": ["AWS", "Docker", "Kubernetes", "CI/CD"]
+        },
+        {
+          "name": "الذكاء الاصطناعي والتعلم الآلي",
+          "items": ["TensorFlow", "PyTorch", "NLP", "Computer Vision"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "المشاريع",
+      "items": [
+        {
+          "title": "منصة التجارة الإلكترونية",
+          "description": "هندسة الخدمات الصغيرة القابلة للتطوير تتعامل مع أكثر من 10 آلاف مستخدم متزامن",
+          "tech": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+          "link": "https://github.com/amrmousa/ecommerce-platform"
+        },
+        {
+          "title": "نظام الدردشة بالذكاء الاصطناعي",
+          "description": "ذكاء اصطناعي محادثة في الوقت الفعلي مع معالجة اللغة الطبيعية",
+          "tech": ["Python", "TensorFlow", "WebSocket", "MongoDB"],
+          "link": "https://github.com/amrmousa/ai-chat-system"
+        },
+        {
+          "title": "لوحة التحليلات",
+          "description": "تصور البيانات في الوقت الفعلي مع التحليلات التنبؤية",
+          "tech": ["Python", "React", "TimescaleDB", "Kafka"],
+          "link": "https://github.com/amrmousa/analytics-dashboard"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "التوصيات",
+      "items": [
+        {
+          "name": "سارة جونسون",
+          "role": "مدير التكنولوجيا في شركة حلول التكنولوجيا",
+          "text": "عمرو مهندس استثنائي يقدم حلولاً عالية الجودة بشكل متسق. رؤى معماريته وقدراته على حل المشاكل لا تقدر بثمن لفريقنا.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah"
+        },
+        {
+          "name": "أحمد حسن",
+          "role": "مدير المنتج في أنظمة السحابة",
+          "text": "العمل مع عمرو كان نقطة تحول لمشروعنا. حول نظامنا القديم إلى معمارية حديثة وقابلة للتطوير بكفاءة رائعة.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ahmed"
+        },
+        {
+          "name": "إميلي تشن",
+          "role": "مؤسسة مختبرات StartUp",
+          "text": "تفاني عمرو في جودة الكود والتعلم المستمر يميزه عن غيره. إنه ليس مجرد مطور؛ بل هو حل مشاكل وعضو فريق مميز.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=emily"
+        }
+      ]
+    },
+    "contact": {
+      "title": "التواصل",
+      "subtitle": "ابقَ على تواصل",
+      "email": "البريد الإلكتروني",
+      "emailValue": "amr@example.com",
+      "github": "GitHub",
+      "githubValue": "https://github.com/amrmousa",
+      "linkedin": "LinkedIn",
+      "linkedinValue": "https://linkedin.com/in/amrmousa"
+    },
+    "footer": {
+      "description": "مهندس Backend متخصص في الأنظمة القابلة للتطوير وحلول الذكاء الاصطناعي.",
+      "quickLinks": {
+        "title": "روابط سريعة",
+        "items": [
+          { "label": "الرئيسية", "href": "/#" },
+          { "label": "عن", "href": "/#about" },
+          { "label": "المشاريع", "href": "/#projects" },
+          { "label": "التواصل", "href": "/#contact" }
+        ]
+      },
+      "social": {
+        "title": "تواصل معي",
+        "items": [
+          { "label": "GitHub", "href": "https://github.com/amrmousa", "icon": "Github" },
+          { "label": "LinkedIn", "href": "https://linkedin.com/in/amrmousa", "icon": "Linkedin" },
+          { "label": "Twitter", "href": "https://twitter.com/amrmousa", "icon": "Twitter" },
+          { "label": "البريد", "href": "mailto:amr@example.com", "icon": "Mail" }
+        ]
+      },
+      "copyright": "© 2025 عمرو موسى. جميع الحقوق محفوظة.",
+      "madeWith": "تم إنشاؤه بشغف وكود"
+    },
+    "metadata": {
+      "title": "عمرو موسى - مهندس Backend ومطور Full Stack",
+      "description": "مهندس Backend متخصص في الأنظمة القابلة للتطوير والهندسة المعمارية للسحابة وحلول الذكاء الاصطناعي. استكشف مشاريعي وخبرتي ومهاراتي في بناء برمجيات قوية.",
+      "keywords": ["مهندس Backend", "مطور Full Stack", "Node.js", "Python", "AWS", "الهندسة المعمارية للسحابة", "الخدمات الصغيرة", "AI/ML", "تصميم API"],
+      "ogTitle": "عمرو موسى - مهندس Backend ومطور Full Stack",
+      "ogDescription": "مهندس Backend متخصص في الأنظمة القابلة للتطوير والهندسة المعمارية للسحابة وحلول الذكاء الاصطناعي.",
+      "ogUrl": "https://amrmousa.com",
+      "ogSiteName": "معرض أعمال عمرو موسى",
+      "twitterTitle": "عمرو موسى - مهندس Backend",
+      "twitterDescription": "مهندس Backend متخصص في الأنظمة القابلة للتطوير وحلول الذكاء الاصطناعي.",
+      "canonicalUrl": "https://amrmousa.com"
     }
+  }
 }

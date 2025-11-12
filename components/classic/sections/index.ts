@@ -1,0 +1,9 @@
+export { ClassicHeader } from './ClassicHeader';
+export { ClassicHero } from './ClassicHero';
+export { ClassicAbout } from './ClassicAbout';
+export { ClassicExperience } from './ClassicExperience';
+export { ClassicSkills } from './ClassicSkills';
+export { ClassicProjects } from './ClassicProjects';
+export { ClassicTestimonials } from './ClassicTestimonials';
+export { ClassicContact } from './ClassicContact';
+export { ClassicFooter } from './ClassicFooter';

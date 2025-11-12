@@ -1,7 +1,10 @@
-export default function ClassicMode() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-white">Classic Mode - Coming Soon</h1>
-    </div>
-  );
+import { getTranslations } from 'next-intl/server';
+import ClassicMode from '@/components/classic/ClassicMode';
+import { generateClassicMetadataFromTranslations } from '@/components/classic/metadata';
+
+export async function generateMetadata() {
+  const t = await getTranslations('portfolio');
+  return generateClassicMetadataFromTranslations(t);
 }
+
+export default ClassicMode;

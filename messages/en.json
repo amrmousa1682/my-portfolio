@@ -1,7 +1,157 @@
 {
-    "modeSelector": {
-        "subtitle": "Choose your experience",
-        "story": "Story Mode",
-        "classic": "Classic Mode"
+  "modeSelector": {
+    "subtitle": "Choose your experience",
+    "story": "Story Mode",
+    "classic": "Classic Mode"
+  },
+  "portfolio": {
+    "header": {
+      "backButton": "Back",
+      "modeLabel": "Classic Mode"
+    },
+    "hero": {
+      "name": "Amr Mousa",
+      "title": "Backend Engineer",
+      "subtitle": "Building scalable systems and AI-powered solutions"
+    },
+    "about": {
+      "title": "About Me",
+      "text": "A passionate Backend Engineer with expertise in building robust, scalable systems. Specialized in cloud architecture, API design, and machine learning integration. Committed to writing clean, maintainable code and solving complex technical challenges."
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "company": "Tech Solutions Inc",
+          "position": "Senior Backend Engineer",
+          "period": "2022 - Present",
+          "description": "Led development of microservices architecture, improved API performance by 40%, and mentored junior developers. Architected cloud-native solutions supporting 50K+ daily active users."
+        },
+        {
+          "company": "Cloud Systems Ltd",
+          "position": "Backend Engineer",
+          "period": "2020 - 2022",
+          "description": "Designed and implemented scalable database solutions, deployed applications on AWS, and established CI/CD pipelines. Reduced deployment time by 60% through automation."
+        },
+        {
+          "company": "StartUp Labs",
+          "position": "Junior Backend Developer",
+          "period": "2018 - 2020",
+          "description": "Developed RESTful APIs using Node.js and Python, worked with MongoDB and PostgreSQL, and contributed to backend optimization. Increased API throughput by 35%."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "categories": [
+        {
+          "name": "Languages",
+          "items": ["Python", "Node.js", "TypeScript", "Go"]
+        },
+        {
+          "name": "Databases",
+          "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL"]
+        },
+        {
+          "name": "Cloud & DevOps",
+          "items": ["AWS", "Docker", "Kubernetes", "CI/CD"]
+        },
+        {
+          "name": "AI & ML",
+          "items": ["TensorFlow", "PyTorch", "NLP", "Computer Vision"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "E-Commerce Platform",
+          "description": "Scalable microservices architecture handling 10K+ concurrent users",
+          "tech": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+          "link": "https://github.com/amrmousa/ecommerce-platform"
+        },
+        {
+          "title": "AI Chat System",
+          "description": "Real-time conversational AI with natural language processing",
+          "tech": ["Python", "TensorFlow", "WebSocket", "MongoDB"],
+          "link": "https://github.com/amrmousa/ai-chat-system"
+        },
+        {
+          "title": "Analytics Dashboard",
+          "description": "Real-time data visualization with predictive analytics",
+          "tech": ["Python", "React", "TimescaleDB", "Kafka"],
+          "link": "https://github.com/amrmousa/analytics-dashboard"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "items": [
+        {
+          "name": "Sarah Johnson",
+          "role": "CTO at Tech Solutions Inc",
+          "text": "Amr is an exceptional engineer who consistently delivers high-quality solutions. His architectural insights and problem-solving abilities are invaluable to our team.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah"
+        },
+        {
+          "name": "Ahmed Hassan",
+          "role": "Product Manager at Cloud Systems",
+          "text": "Working with Amr was a game-changer for our project. He transformed our legacy system into a modern, scalable architecture with remarkable efficiency.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ahmed"
+        },
+        {
+          "name": "Emily Chen",
+          "role": "Founder at StartUp Labs",
+          "text": "Amr's dedication to code quality and continuous learning set him apart. He's not just a developer; he's a problem solver and team player.",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=emily"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Get in touch",
+      "email": "Email",
+      "emailValue": "amr@example.com",
+      "github": "GitHub",
+      "githubValue": "https://github.com/amrmousa",
+      "linkedin": "LinkedIn",
+      "linkedinValue": "https://linkedin.com/in/amrmousa"
+    },
+    "footer": {
+      "description": "Backend Engineer specializing in scalable systems and AI solutions.",
+      "quickLinks": {
+        "title": "Quick Links",
+        "items": [
+          { "label": "Home", "href": "/#" },
+          { "label": "About", "href": "/#about" },
+          { "label": "Projects", "href": "/#projects" },
+          { "label": "Contact", "href": "/#contact" }
+        ]
+      },
+      "social": {
+        "title": "Connect",
+        "items": [
+          { "label": "GitHub", "href": "https://github.com/amrmousa", "icon": "Github" },
+          { "label": "LinkedIn", "href": "https://linkedin.com/in/amrmousa", "icon": "Linkedin" },
+          { "label": "Twitter", "href": "https://twitter.com/amrmousa", "icon": "Twitter" },
+          { "label": "Email", "href": "mailto:amr@example.com", "icon": "Mail" }
+        ]
+      },
+      "copyright": "© 2025 Amr Mousa. All rights reserved.",
+      "madeWith": "Made with passion and code"
+    },
+    "metadata": {
+      "title": "Amr Mousa - Backend Engineer & Full Stack Developer",
+      "description": "Backend Engineer specializing in scalable systems, cloud architecture, and AI solutions. Explore my projects, experience, and skills in building robust software.",
+      "keywords": ["Backend Engineer", "Full Stack Developer", "Node.js", "Python", "AWS", "Cloud Architecture", "Microservices", "AI/ML", "API Design"],
+      "ogTitle": "Amr Mousa - Backend Engineer & Full Stack Developer",
+      "ogDescription": "Backend Engineer specializing in scalable systems, cloud architecture, and AI solutions.",
+      "ogUrl": "https://amrmousa.com",
+      "ogSiteName": "Amr Mousa Portfolio",
+      "twitterTitle": "Amr Mousa - Backend Engineer",
+      "twitterDescription": "Backend Engineer specializing in scalable systems and AI solutions.",
+      "canonicalUrl": "https://amrmousa.com"
     }
+  }
 }
