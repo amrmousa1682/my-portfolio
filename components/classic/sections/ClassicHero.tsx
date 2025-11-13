@@ -1,4 +1,5 @@
 import { MotionDiv, MotionH1, MotionSection } from "@/components/motion";
+import Image from "next/image";
 import styles from "../ClassicMode.module.css";
 
 interface ClassicHeroProps {
@@ -13,7 +14,14 @@ export async function ClassicHero({ name, title, subtitle }: ClassicHeroProps) {
       <div className={styles.heroContent}>
         <MotionDiv className={styles.avatar}>
           <div className={styles.avatarInner}>
-            <div className={styles.avatarGlow} />
+            <Image
+              src="/avatar.webp"
+              alt={name}
+              width={180}
+              height={180}
+              style={{ borderRadius: '50%', objectFit: 'cover' }}
+              priority
+            />
           </div>
         </MotionDiv>
 
