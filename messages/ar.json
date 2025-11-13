@@ -69,19 +69,22 @@
           "title": "منصة التجارة الإلكترونية",
           "description": "هندسة الخدمات الصغيرة القابلة للتطوير تتعامل مع أكثر من 10 آلاف مستخدم متزامن",
           "tech": ["Node.js", "PostgreSQL", "Redis", "Docker"],
-          "link": "https://github.com/amrmousa/ecommerce-platform"
+          "link": "https://github.com/amrmousa/ecommerce-platform",
+          "gif": "https://media.giphy.com/media/LaVp0AyqUIVAI78kDk/giphy.gif"
         },
         {
           "title": "نظام الدردشة بالذكاء الاصطناعي",
           "description": "ذكاء اصطناعي محادثة في الوقت الفعلي مع معالجة اللغة الطبيعية",
           "tech": ["Python", "TensorFlow", "WebSocket", "MongoDB"],
-          "link": "https://github.com/amrmousa/ai-chat-system"
+          "link": "https://github.com/amrmousa/ai-chat-system",
+          "gif": "https://media.giphy.com/media/l0HlDtKo5X8rvAqJi/giphy.gif"
         },
         {
           "title": "لوحة التحليلات",
           "description": "تصور البيانات في الوقت الفعلي مع التحليلات التنبؤية",
           "tech": ["Python", "React", "TimescaleDB", "Kafka"],
-          "link": "https://github.com/amrmousa/analytics-dashboard"
+          "link": "https://github.com/amrmousa/analytics-dashboard",
+          "gif": "https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
         }
       ]
     },

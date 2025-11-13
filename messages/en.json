@@ -69,19 +69,22 @@
           "title": "E-Commerce Platform",
           "description": "Scalable microservices architecture handling 10K+ concurrent users",
           "tech": ["Node.js", "PostgreSQL", "Redis", "Docker"],
-          "link": "https://github.com/amrmousa/ecommerce-platform"
+          "link": "https://github.com/amrmousa/ecommerce-platform",
+          "gif": "https://media.giphy.com/media/LaVp0AyqUIVAI78kDk/giphy.gif"
         },
         {
           "title": "AI Chat System",
           "description": "Real-time conversational AI with natural language processing",
           "tech": ["Python", "TensorFlow", "WebSocket", "MongoDB"],
-          "link": "https://github.com/amrmousa/ai-chat-system"
+          "link": "https://github.com/amrmousa/ai-chat-system",
+          "gif": "https://media.giphy.com/media/l0HlDtKo5X8rvAqJi/giphy.gif"
         },
         {
           "title": "Analytics Dashboard",
           "description": "Real-time data visualization with predictive analytics",
           "tech": ["Python", "React", "TimescaleDB", "Kafka"],
-          "link": "https://github.com/amrmousa/analytics-dashboard"
+          "link": "https://github.com/amrmousa/analytics-dashboard",
+          "gif": "https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
         }
       ]
     },

@@ -15,6 +15,7 @@ export interface Project {
   description: string;
   tech: string[];
   link: string;
+  gif?: string;
 }
 
 export interface Testimonial {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MotionDiv, MotionH1, MotionSection } from "@/components/motion";
 import { ExternalLink } from "lucide-react";
 import styles from "../ClassicMode.module.css";
@@ -30,6 +31,19 @@ export async function ClassicProjects({ title, items }: ClassicProjectsProps) {
                 rel="noopener noreferrer"
                 className={styles.projectLink}
               >
+                {project.gif && (
+                  <div className={styles.projectGif}>
+                    <Image
+                      src={project.gif}
+                      alt={project.title}
+                      width={400}
+                      height={220}
+                      className={styles.gifImage}
+                      priority={idx < 2}
+                      unoptimized
+                    />
+                  </div>
+                )}
                 <div className={styles.projectHeader}>
                   <h3 className={styles.projectTitle}>{project.title}</h3>
                   <ExternalLink className={styles.linkIcon} />
