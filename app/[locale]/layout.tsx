@@ -1,23 +1,10 @@
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { Cairo, Geist, Geist_Mono } from "next/font/google";
+import { Cairo } from "next/font/google";
 import { AnimatedBackground } from "../../components/AnimatedBackground";
 import { LanguageSwitcher } from "../../components/LanguageSwitcher";
 import { notFound } from 'next/navigation';
-import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const cairo = Cairo({
   variable: "--font-cairo",
