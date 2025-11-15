@@ -6,7 +6,7 @@
   },
   "portfolio": {
     "header": {
-      "backButton": "Back",
+      "backButton": "Exit",
       "modeLabel": "Classic Mode"
     },
     "hero": {
@@ -155,6 +155,113 @@
       "twitterTitle": "Amr Mousa - Backend Engineer",
       "twitterDescription": "Backend Engineer specializing in scalable systems and AI solutions.",
       "canonicalUrl": "https://amrmousa.com"
+    }
+  },
+  "story": {
+    "header": {
+      "exitButton": "Exit"
+    },
+    "ui": {
+      "skipText": "Click to skip..."
+    },
+    "scenes": {
+      "intro": {
+        "id": "intro",
+        "background": "linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "ACCESSING MEMORY... System initialized. I am NEXUS, guardian of this digital archive. Who seeks to enter this domain?",
+        "choices": [
+          { "text": "I want to learn about Amr Mousa", "nextScene": "about" },
+          { "text": "Show me what you have here", "nextScene": "menu" },
+          { "text": "What is this place?", "nextScene": "explanation" },
+          { "text": "Back to main menu", "nextScene": "menu" }
+        ]
+      },
+      "explanation": {
+        "id": "explanation",
+        "background": "linear-gradient(135deg, #0f0520 0%, #1a0a3e 50%, #0f0520 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "This is a digital consciousness—a living archive of knowledge, skills, and achievements. Every project, every line of code, every solution... preserved in crystallized memory.",
+        "choices": [
+          { "text": "Tell me about the creator", "nextScene": "about" },
+          { "text": "Show me the archives", "nextScene": "menu" }
+        ]
+      },
+      "menu": {
+        "id": "menu",
+        "background": "linear-gradient(135deg, #0a1628 0%, #0f2350 50%, #0a1628 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "Three pathways lie before you. Choose wisely, seeker.",
+        "choices": [
+          { "text": "Learn about Amr Mousa", "nextScene": "about" },
+          { "text": "View skill modules", "nextScene": "skills" },
+          { "text": "Access project files", "nextScene": "projects" }
+        ]
+      },
+      "about": {
+        "id": "about",
+        "background": "linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "Amr Mousa... Backend Engineer. Architect of scalable systems. Master of cloud infrastructures and AI integration. His code flows through distributed networks like digital blood through veins.",
+        "choices": [
+          { "text": "What are his capabilities?", "nextScene": "skills" },
+          { "text": "Show me his work", "nextScene": "projects" },
+          { "text": "How can I reach him?", "nextScene": "contact" }
+        ]
+      },
+      "skills": {
+        "id": "skills",
+        "background": "linear-gradient(135deg, #0a2847 0%, #1a4870 50%, #0a2847 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "SCANNING SKILL MATRIX... Core competencies detected: Python, Node.js, PostgreSQL, Docker, Kubernetes, AWS. Advanced protocols: Machine Learning, System Architecture, Distributed Computing. All systems operational.",
+        "choices": [
+          { "text": "Impressive. Show me the projects", "nextScene": "projects" },
+          { "text": "What about experience?", "nextScene": "about" },
+          { "text": "I want to work with him", "nextScene": "contact" }
+        ]
+      },
+      "projects": {
+        "id": "projects",
+        "background": "linear-gradient(135deg, #0f1f2e 0%, #1f3f5e 50%, #0f1f2e 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "MISSION FILES UNLOCKED... E-Commerce Platform: 10K concurrent users, microservices architecture. AI Chat System: Real-time NLP processing. Analytics Dashboard: Predictive modeling with live data streams. Each mission: completed with precision.",
+        "choices": [
+          { "text": "Remarkable work", "nextScene": "contact" },
+          { "text": "Tell me more about the skills", "nextScene": "skills" },
+          { "text": "Back to main menu", "nextScene": "menu" }
+        ]
+      },
+      "contact": {
+        "id": "contact",
+        "background": "linear-gradient(135deg, #1a0f2e 0%, #3a1f5e 50%, #1a0f2e 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "The archive has revealed its secrets. Would you like to recruit this engineer for your next mission? Communication channels are open. Choose your preferred protocol.",
+        "choices": [
+          { "text": "📧 Email: amr@example.com", "nextScene": "end", "link": "mailto:amr@example.com" },
+          { "text": "💼 LinkedIn Profile", "nextScene": "end", "link": "https://linkedin.com/in/amrmousa" },
+          { "text": "💬 WhatsApp: Contact", "nextScene": "end", "link": "https://wa.me/201234567890" }
+        ]
+      },
+      "end": {
+        "id": "end",
+        "background": "linear-gradient(135deg, #0a0a0a 0%, #1a1a3e 50%, #0a0a0a 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "CONNECTION ESTABLISHED. The journey through this digital realm concludes... but the real adventure awaits. May your paths align.",
+        "choices": [
+          { "text": "Return to beginning", "nextScene": "intro" },
+          { "text": "Exit Story Mode", "nextScene": "exit" }
+        ]
+      }
+    },
+    "metadata": {
+      "title": "Amr Mousa - Interactive Story Experience",
+      "description": "Explore Amr Mousa's portfolio through an immersive interactive story. Discover skills, projects, and experience in a unique narrative journey.",
+      "keywords": ["Interactive Portfolio", "Story Mode", "Backend Engineer", "Narrative Experience"],
+      "ogTitle": "Amr Mousa - Interactive Story Portfolio",
+      "ogDescription": "Experience a unique interactive narrative showcasing backend engineering expertise.",
+      "twitterTitle": "Amr Mousa - Story Mode Portfolio",
+      "twitterDescription": "Explore my portfolio through an immersive story experience.",
+      "canonicalUrl": "https://amrmousa.com/story"
     }
   }
 }

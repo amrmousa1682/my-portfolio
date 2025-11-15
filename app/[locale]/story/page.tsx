@@ -1,7 +1,10 @@
-export default function StoryMode() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-white">Story Mode - Coming Soon</h1>
-    </div>
-  );
+import { getTranslations } from 'next-intl/server';
+import StoryMode from '@/components/story/StoryMode';
+import { generateStoryMetadataFromTranslations } from '@/components/story/metadata';
+
+export async function generateMetadata() {
+  const t = await getTranslations('story');
+  return generateStoryMetadataFromTranslations(t);
 }
+
+export default StoryMode;

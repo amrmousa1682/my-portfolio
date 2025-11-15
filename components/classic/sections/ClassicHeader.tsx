@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { BackButton } from "@/components/shared";
 import styles from "../ClassicMode.module.css";
 
 interface ClassicHeaderProps {
@@ -10,10 +9,7 @@ export async function ClassicHeader({ backButtonLabel }: ClassicHeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <Link href="/" className={styles.backButton}>
-          <ArrowLeft className={styles.icon} />
-          <span>{backButtonLabel}</span>
-        </Link>
+        <BackButton label={backButtonLabel} className={styles.backButton} />
       </div>
     </header>
   );

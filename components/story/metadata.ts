@@ -2,6 +2,7 @@ import {
   generatePersonSchema,
   generateBreadcrumbSchema,
   generatePageMetadata,
+  generateWebPageSchema,
   type BaseMetadataConfig,
 } from '@/components/shared';
 
@@ -10,7 +11,7 @@ type TranslationFunction = {
   raw: (key: string) => string[];
 };
 
-export async function generateClassicMetadata(t: TranslationFunction) {
+export async function generateStoryMetadata(t: TranslationFunction) {
   const config: BaseMetadataConfig = {
     name: t('hero.name'),
     jobTitle: t('hero.title'),
@@ -24,25 +25,21 @@ export async function generateClassicMetadata(t: TranslationFunction) {
 
   const personSchema = generatePersonSchema(config);
   const breadcrumbSchema = generateBreadcrumbSchema(config);
-
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Amr Mousa',
-    url: 'https://amrmousa.com',
-    description: t('footer.description'),
-    email: t('contact.emailValue'),
-    sameAs: [t('contact.githubValue'), t('contact.linkedinValue')],
-  };
+  const webPageSchema = generateWebPageSchema({
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+    url: `${config.url}/story`,
+    siteName: 'Amr Mousa Portfolio',
+  });
 
   return {
     personSchema,
     breadcrumbSchema,
-    organizationSchema,
+    webPageSchema,
   };
 }
 
-export function generateClassicMetadataFromTranslations(t: TranslationFunction) {
+export function generateStoryMetadataFromTranslations(t: TranslationFunction) {
   return generatePageMetadata({
     title: t('metadata.title'),
     description: t('metadata.description'),
