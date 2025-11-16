@@ -1,4 +1,7 @@
-import { Metadata } from 'next';
+type TranslationFunction = {
+  (key: string): string;
+  raw: (key: string) => string[];
+};
 
 export interface JSONLDSchema {
   '@context': string;
@@ -6,117 +9,53 @@ export interface JSONLDSchema {
   [key: string]: unknown;
 }
 
-export interface BaseMetadataConfig {
-  name: string;
-  jobTitle: string;
-  description: string;
-  url: string;
-  email: string;
-  githubUrl: string;
-  linkedinUrl: string;
-  mode: 'classic' | 'story';
+export function generateMetadataFromTranslations(t: TranslationFunction){
+    return {
+        title: t('title'),
+        description: t('description'),
+        keywords: t.raw('keywords'),
+        authors: [{ name: t('name') }],
+        creator: t('name'),
+    }
 }
 
-/**
- * Generate Person Schema for JSON-LD
- */
-export function generatePersonSchema(config: BaseMetadataConfig): JSONLDSchema {
+export function generateScheamsFromTranslations(t: TranslationFunction) {
+    return {
+        personSchema: generatePersonSchemaFromTranslations(t),
+        websiteSchema: generateWebsiteSchemaFromTranslations(t),
+        breadcrumbSchema: generateBreadcrumbSchemaFromTranslations(t),
+    }
+}
+
+function generatePersonSchemaFromTranslations(t: TranslationFunction): JSONLDSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: config.name,
-    jobTitle: config.jobTitle,
-    description: config.description,
-    url: config.url,
-    email: config.email,
-    sameAs: [config.githubUrl, config.linkedinUrl],
+    name: t('person.name'),
+    jobTitle: t('person.jobTitle'),
+    description: t('person.description'),
+    url: t('person.url'),
+    email: t('person.email'),
+    inLanguage: t('person.inLanguage'),
+    sameAs: t.raw('person.sameAs'),
   };
 }
 
-/**
- * Generate BreadcrumbList Schema for JSON-LD
- */
-export function generateBreadcrumbSchema(
-  config: Pick<BaseMetadataConfig, 'url' | 'mode'>
-): JSONLDSchema {
+function generateWebsiteSchemaFromTranslations(t: TranslationFunction): JSONLDSchema {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: t('website.name'),
+    description: t('website.description'),
+    url: t('website.url'),
+    inLanguage: t('website.inLanguage'),
+  };
+}
+
+function generateBreadcrumbSchemaFromTranslations(t: TranslationFunction): JSONLDSchema {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: config.url,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: config.mode === 'classic' ? 'Classic Mode' : 'Story Mode',
-        item: `${config.url}/${config.mode}`,
-      },
-    ],
-  };
-}
-
-/**
- * Generate WebPage Schema for JSON-LD
- */
-export function generateWebPageSchema(config: {
-  title: string;
-  description: string;
-  url: string;
-  siteName: string;
-}): JSONLDSchema {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: config.title,
-    description: config.description,
-    url: config.url,
-    isPartOf: {
-      '@type': 'WebSite',
-      name: config.siteName,
-      url: config.url.replace(/\/(classic|story)$/, ''),
-    },
-  };
-}
-
-/**
- * Generate Next.js Metadata object
- */
-export function generatePageMetadata(config: {
-  title: string;
-  description: string;
-  keywords: string[];
-  canonicalUrl: string;
-  ogTitle?: string;
-  ogDescription?: string;
-  twitterTitle?: string;
-  twitterDescription?: string;
-}): Metadata {
-  return {
-    title: config.title,
-    description: config.description,
-    keywords: config.keywords,
-    authors: [{ name: 'Amr Mousa' }],
-    creator: 'Amr Mousa',
-    openGraph: {
-      type: 'website',
-      locale: 'en_US',
-      title: config.ogTitle || config.title,
-      description: config.ogDescription || config.description,
-      url: config.canonicalUrl,
-      siteName: 'Amr Mousa Portfolio',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: config.twitterTitle || config.title,
-      description: config.twitterDescription || config.description,
-    },
-    robots: 'index, follow',
-    alternates: {
-      canonical: config.canonicalUrl,
-    },
+    itemListElement:t.raw('breadcrumb.itemListElement')
   };
 }

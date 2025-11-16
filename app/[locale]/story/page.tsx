@@ -1,10 +1,9 @@
-import { getTranslations } from 'next-intl/server';
-import StoryMode from '@/components/story/StoryMode';
-import { generateStoryMetadataFromTranslations } from '@/components/story/metadata';
+import { getTranslations } from "next-intl/server";
+import StoryMode from "@/components/story/StoryMode";
+import { generateMetadataFromTranslations } from "@/components/shared";
 
 export async function generateMetadata() {
-  const t = await getTranslations('story');
-  return generateStoryMetadataFromTranslations(t);
+  return generateMetadataFromTranslations(await getTranslations("seo"));
 }
 
 export default StoryMode;

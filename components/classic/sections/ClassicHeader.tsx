@@ -8,9 +8,7 @@ interface ClassicHeaderProps {
 export async function ClassicHeader({ backButtonLabel }: ClassicHeaderProps) {
   return (
     <header className={styles.header}>
-      <div className={styles.headerContent}>
         <BackButton label={backButtonLabel} className={styles.backButton} />
-      </div>
     </header>
   );
 }

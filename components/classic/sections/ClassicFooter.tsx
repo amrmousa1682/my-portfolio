@@ -1,12 +1,6 @@
 import styles from "../ClassicMode.module.css";
-import { QuickLink, SocialLink } from "../types";
 
 interface ClassicFooterProps {
-  description: string;
-  quickLinksTitle: string;
-  quickLinksItems: QuickLink[];
-  socialTitle: string;
-  socialItems: SocialLink[];
   copyright: string;
   madeWith: string;
 }

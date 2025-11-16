@@ -11,9 +11,3 @@ export interface Scene {
   dialogue: string;
   choices: Choice[];
 }
-
-export interface StoryData {
-  exitButton: string;
-  skipText: string;
-  scenes: Record<string, Scene>;
-}

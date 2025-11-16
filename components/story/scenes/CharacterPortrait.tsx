@@ -1,17 +1,13 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import styles from '../StoryMode.module.css';
+import { motion } from "motion/react";
+import styles from "../StoryMode.module.css";
 
 interface CharacterPortraitProps {
   characterName: string;
-  fontFamily: string;
 }
 
-export function CharacterPortrait({
-  characterName,
-  fontFamily,
-}: CharacterPortraitProps) {
+export function CharacterPortrait({ characterName }: CharacterPortraitProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }}
@@ -31,7 +27,7 @@ export function CharacterPortrait({
                 style={{ top: `${(i + 1) * 12.5}%` }}
                 animate={{
                   opacity: [0.2, 0.8, 0.2],
-                  x: ['-100%', '100%'],
+                  x: ["-100%", "100%"],
                 }}
                 transition={{
                   duration: 3,
@@ -51,7 +47,7 @@ export function CharacterPortrait({
               transition={{
                 duration: 8,
                 repeat: Infinity,
-                ease: 'linear',
+                ease: "linear",
               }}
               className={styles.coreRing}
             />
@@ -63,7 +59,7 @@ export function CharacterPortrait({
               transition={{
                 duration: 8,
                 repeat: Infinity,
-                ease: 'linear',
+                ease: "linear",
               }}
               className={styles.coreRingInner}
             />
@@ -77,7 +73,7 @@ export function CharacterPortrait({
           transition={{ delay: 0.5 }}
           className={styles.characterName}
         >
-          <p style={{ fontFamily }}>{characterName}</p>
+          <p>{characterName}</p>
         </motion.div>
       </div>
     </motion.div>

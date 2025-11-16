@@ -255,17 +255,20 @@
 
 .dialogueText {
   margin-bottom: 1rem;
-  min-height: 60px;
   color: rgb(207, 250, 254);
   line-height: 1.625;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
-
+/* 
 @media (min-width: 768px) {
   .dialogueText {
     margin-bottom: 1.5rem;
-    min-height: 80px;
   }
-}
+} */
 
 .dialogueText p {
   margin: 0;
@@ -276,6 +279,18 @@
   .dialogueText p {
     font-size: 1rem;
   }
+}
+
+.dialogueLink {
+  color: rgb(34, 211, 238);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.dialogueLink:hover {
+  color: rgb(6, 182, 212);
+  text-decoration: none;
 }
 
 .textRtl {

@@ -10,9 +10,6 @@ import styles from './StoryMode.module.css';
 interface StoryInteractiveProps {
   scenes: Record<string, Scene>;
   skipText: string;
-  fontHeading: string;
-  fontBody: string;
-  fontMono: string;
   isRTL: boolean;
   initialScene?: string;
 }
@@ -20,9 +17,6 @@ interface StoryInteractiveProps {
 export function StoryInteractive({
   scenes,
   skipText,
-  fontHeading,
-  fontBody,
-  fontMono,
   isRTL,
   initialScene = 'intro',
 }: StoryInteractiveProps) {
@@ -76,7 +70,6 @@ export function StoryInteractive({
       <CharacterPortrait
         key={`portrait-${currentSceneId}`}
         characterName={currentScene.characterName}
-        fontFamily={fontHeading}
       />
 
       {/* Dialogue Box */}
@@ -86,9 +79,6 @@ export function StoryInteractive({
         dialogue={currentScene.dialogue}
         choices={currentScene.choices}
         skipText={skipText}
-        fontHeading={fontHeading}
-        fontBody={fontBody}
-        fontMono={fontMono}
         isRTL={isRTL}
         onChoiceSelect={handleChoice}
       />

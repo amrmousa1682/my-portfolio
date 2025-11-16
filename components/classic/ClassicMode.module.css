@@ -4,37 +4,20 @@
   color: rgb(207, 250, 254);
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(34, 211, 238, 0.2);
-}
 
-.headerContent {
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: 1rem 0rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 1.5rem;
 }
 
 .backButton {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(34, 211, 238, 0.3);
-  color: rgb(34, 211, 238);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  cursor: pointer;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 50;
 }
 
 .backButton:hover {

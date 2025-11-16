@@ -1,267 +1,295 @@
 {
+  "seo": {
+    "name": "{{name}}",
+    "title": "{{name}} - {{title}}",
+    "description": "{{about}}",
+    "keywords": "{{seoKeywords}}",
+    "person": {
+      "name": "{{name}}",
+      "jobTitle": "{{title}}",
+      "description": "Portfolio showcasing my projects, experience, and skills.",
+      "url": "{{siteUrl}}/en",
+      "email": "{{emailValue}}",
+      "inLanguage": "en",
+      "sameAs": ["{{linkedinLink}}", "{{githubLink}}"]
+    },
+    "website": {
+      "name": "{{name}} Portfolio",
+      "description": "Portfolio showcasing my projects, experience, and skills.",
+      "url": "{{siteUrl}}/en",
+      "inLanguage": "en"
+    },
+    "breadcrumb": {
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{siteUrl}}/en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "{{siteUrl}}/en/classic"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Story Mode",
+          "item": "{{siteUrl}}/en/story"
+        }
+      ]
+    }
+  },
   "modeSelector": {
     "subtitle": "Choose your experience",
     "story": "Story Mode",
     "classic": "Classic Mode"
   },
-  "portfolio": {
-    "header": {
-      "backButton": "Exit",
-      "modeLabel": "Classic Mode"
-    },
-    "hero": {
-      "name": "Amr Mousa",
-      "title": "Backend Engineer",
-      "subtitle": "Building scalable systems and AI-powered solutions"
-    },
-    "about": {
-      "title": "About Me",
-      "text": "A passionate Backend Engineer with expertise in building robust, scalable systems. Specialized in cloud architecture, API design, and machine learning integration. Committed to writing clean, maintainable code and solving complex technical challenges."
-    },
-    "experience": {
-      "title": "Experience",
-      "items": [
-        {
-          "company": "Tech Solutions Inc",
-          "position": "Senior Backend Engineer",
-          "period": "2022 - Present",
-          "description": "Led development of microservices architecture, improved API performance by 40%, and mentored junior developers. Architected cloud-native solutions supporting 50K+ daily active users."
-        },
-        {
-          "company": "Cloud Systems Ltd",
-          "position": "Backend Engineer",
-          "period": "2020 - 2022",
-          "description": "Designed and implemented scalable database solutions, deployed applications on AWS, and established CI/CD pipelines. Reduced deployment time by 60% through automation."
-        },
-        {
-          "company": "StartUp Labs",
-          "position": "Junior Backend Developer",
-          "period": "2018 - 2020",
-          "description": "Developed RESTful APIs using Node.js and Python, worked with MongoDB and PostgreSQL, and contributed to backend optimization. Increased API throughput by 35%."
-        }
-      ]
-    },
-    "skills": {
-      "title": "Skills",
-      "categories": [
-        {
-          "name": "Languages",
-          "items": ["Python", "Node.js", "TypeScript", "Go"]
-        },
-        {
-          "name": "Databases",
-          "items": ["PostgreSQL", "MongoDB", "Redis", "MySQL"]
-        },
-        {
-          "name": "Cloud & DevOps",
-          "items": ["AWS", "Docker", "Kubernetes", "CI/CD"]
-        },
-        {
-          "name": "AI & ML",
-          "items": ["TensorFlow", "PyTorch", "NLP", "Computer Vision"]
-        }
-      ]
-    },
-    "projects": {
-      "title": "Projects",
-      "items": [
-        {
-          "title": "E-Commerce Platform",
-          "description": "Scalable microservices architecture handling 10K+ concurrent users",
-          "tech": ["Node.js", "PostgreSQL", "Redis", "Docker"],
-          "link": "https://github.com/amrmousa/ecommerce-platform",
-          "gif": "https://media.giphy.com/media/LaVp0AyqUIVAI78kDk/giphy.gif"
-        },
-        {
-          "title": "AI Chat System",
-          "description": "Real-time conversational AI with natural language processing",
-          "tech": ["Python", "TensorFlow", "WebSocket", "MongoDB"],
-          "link": "https://github.com/amrmousa/ai-chat-system",
-          "gif": "https://media.giphy.com/media/l0HlDtKo5X8rvAqJi/giphy.gif"
-        },
-        {
-          "title": "Analytics Dashboard",
-          "description": "Real-time data visualization with predictive analytics",
-          "tech": ["Python", "React", "TimescaleDB", "Kafka"],
-          "link": "https://github.com/amrmousa/analytics-dashboard",
-          "gif": "https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif"
-        }
-      ]
-    },
-    "testimonials": {
-      "title": "Testimonials",
-      "items": [
-        {
-          "name": "Sarah Johnson",
-          "role": "CTO at Tech Solutions Inc",
-          "text": "Amr is an exceptional engineer who consistently delivers high-quality solutions. His architectural insights and problem-solving abilities are invaluable to our team.",
-          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah"
-        },
-        {
-          "name": "Ahmed Hassan",
-          "role": "Product Manager at Cloud Systems",
-          "text": "Working with Amr was a game-changer for our project. He transformed our legacy system into a modern, scalable architecture with remarkable efficiency.",
-          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=ahmed"
-        },
-        {
-          "name": "Emily Chen",
-          "role": "Founder at StartUp Labs",
-          "text": "Amr's dedication to code quality and continuous learning set him apart. He's not just a developer; he's a problem solver and team player.",
-          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=emily"
-        }
-      ]
-    },
-    "contact": {
-      "title": "Contact",
-      "subtitle": "Get in touch",
-      "email": "Email",
-      "emailValue": "amr@example.com",
-      "github": "GitHub",
-      "githubValue": "https://github.com/amrmousa",
-      "linkedin": "LinkedIn",
-      "linkedinValue": "https://linkedin.com/in/amrmousa"
-    },
-    "footer": {
-      "description": "Backend Engineer specializing in scalable systems and AI solutions.",
-      "quickLinks": {
-        "title": "Quick Links",
-        "items": [
-          { "label": "Home", "href": "/#" },
-          { "label": "About", "href": "/#about" },
-          { "label": "Projects", "href": "/#projects" },
-          { "label": "Contact", "href": "/#contact" }
-        ]
-      },
-      "social": {
-        "title": "Connect",
-        "items": [
-          { "label": "GitHub", "href": "https://github.com/amrmousa", "icon": "Github" },
-          { "label": "LinkedIn", "href": "https://linkedin.com/in/amrmousa", "icon": "Linkedin" },
-          { "label": "Twitter", "href": "https://twitter.com/amrmousa", "icon": "Twitter" },
-          { "label": "Email", "href": "mailto:amr@example.com", "icon": "Mail" }
-        ]
-      },
-      "copyright": "© 2025 Amr Mousa. All rights reserved.",
-      "madeWith": "Made with passion and code"
-    },
-    "metadata": {
-      "title": "Amr Mousa - Backend Engineer & Full Stack Developer",
-      "description": "Backend Engineer specializing in scalable systems, cloud architecture, and AI solutions. Explore my projects, experience, and skills in building robust software.",
-      "keywords": ["Backend Engineer", "Full Stack Developer", "Node.js", "Python", "AWS", "Cloud Architecture", "Microservices", "AI/ML", "API Design"],
-      "ogTitle": "Amr Mousa - Backend Engineer & Full Stack Developer",
-      "ogDescription": "Backend Engineer specializing in scalable systems, cloud architecture, and AI solutions.",
-      "ogUrl": "https://amrmousa.com",
-      "ogSiteName": "Amr Mousa Portfolio",
-      "twitterTitle": "Amr Mousa - Backend Engineer",
-      "twitterDescription": "Backend Engineer specializing in scalable systems and AI solutions.",
-      "canonicalUrl": "https://amrmousa.com"
-    }
+  "classicMode": {
+    "modeLabel": "Classic Mode",
+    "headerReturnButton": "Exit",
+    "aboutTitle": "About",
+    "experienceTitle": "Experience",
+    "skillsTitle": "Skills",
+    "projectsTitle": "Projects",
+    "testimonialsTitle": "Testimonials",
+    "contactTitle": "Contact",
+    "contactSubtitle": "Get in touch",
+    "contactEmail": "Email",
+    "contactGithub": "GitHub",
+    "contactLinkedin": "LinkedIn",
+    "footerCopyright": "© 2025 Amr Mousa. All rights reserved.",
+    "footerMadeWith": "Made with passion and code"
   },
-  "story": {
-    "header": {
-      "exitButton": "Exit"
-    },
-    "ui": {
-      "skipText": "Click to skip..."
-    },
+  "storyMode": {
+    "modeLabel": "Story Mode",
+    "headerReturnButton": "Exit",
+    "skipText": "Click to skip..."
+  },
+  "data": {
+    "name": "Your Name",
+    "title": "job title",
+    "subtitle": "bio about you",
+    "about": "intoduction about yourself",
+    "seoKeywords":[
+      "Full Stack Developer",
+      "Web Development",
+      "Node.js",
+      "React",
+      "AWS",
+      "Cloud Solutions",
+      "AI Integration",
+      "Scalable Applications"
+    ],
+    "experienceItems": [
+      {
+        "company": "company name",
+        "position": "position",
+        "period": "date range ex:2022 - Present",
+        "description": "description of the work done in this position"
+      },
+      {
+        "company": "company name",
+        "position": "position",
+        "period": "date range ex:2022 - Present",
+        "description": "description of the work done in this position"
+      },
+      {
+        "company": "company name",
+        "position": "position",
+        "period": "date range ex:2022 - Present",
+        "description": "description of the work done in this position"
+      }
+    ],
+    "skillsCategories": [
+      {
+        "name": "category name",
+        "items": ["skill 1", "skill 2", "skill 3"]
+      },
+      {
+        "name": "category name",
+        "items": ["skill 1", "skill 2", "skill 3"]
+      },
+      {
+        "name": "category name",
+        "items": ["skill 1", "skill 2", "skill 3"]
+      }
+    ],
+    "projectsItems": [
+      {
+        "title": "project title",
+        "description": "short description of the project",
+        "tech": ["tech 1", "tech 2", "tech 3"],
+        "link": "link to the project",
+        "gif": "/project.webp"
+      },
+      {
+        "title": "project title",
+        "description": "short description of the project",
+        "tech": ["tech 1", "tech 2", "tech 3"],
+        "link": "link to the project",
+        "gif": "/project.webp"
+      },
+      {
+        "title": "project title",
+        "description": "short description of the project",
+        "tech": ["tech 1", "tech 2", "tech 3"],
+        "link": "link to the project",
+        "gif": "/project.webp"
+      }
+    ],
+    "testimonialsTitle": "Testimonials",
+    "testimonialsItems": [
+      {
+        "name": "Person Name",
+        "role": "Person Role",
+        "text": "Testimonial text goes here.",
+        "image": "/avatar.webp"
+      },
+      {
+        "name": "Person Name",
+        "role": "Person Role",
+        "text": "Testimonial text goes here.",
+        "image": "/avatar.webp"
+      },
+      {
+        "name": "Person Name",
+        "role": "Person Role",
+        "text": "Testimonial text goes here.",
+        "image": "/avatar.webp"
+      }
+    ],
+    "emailValue": "amrmousa1682@gmail.com",
+    "githubLink": "https://github.com/amrmousa1682",
+    "linkedinLink": "https://www.linkedin.com/in/amrmousa1682"
+  },
+ "story": {
     "scenes": {
       "intro": {
         "id": "intro",
         "background": "linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "ACCESSING MEMORY... System initialized. I am NEXUS, guardian of this digital archive. Who seeks to enter this domain?",
+        "dialogue": "BOOT SEQUENCE INITIATED...\nWelcome to the digital archives of {{name}},\na {{title}} specializing in {{subtitle}}. How can I assist you?",
         "choices": [
-          { "text": "I want to learn about Amr Mousa", "nextScene": "about" },
-          { "text": "Show me what you have here", "nextScene": "menu" },
-          { "text": "What is this place?", "nextScene": "explanation" },
-          { "text": "Back to main menu", "nextScene": "menu" }
+          { "text": "Tell me about {{name}}", "nextScene": "about" },
+          { "text": "Show navigation panel", "nextScene": "menu" },
+          { "text": "What is this system?", "nextScene": "explanation" }
         ]
       },
+
       "explanation": {
         "id": "explanation",
         "background": "linear-gradient(135deg, #0f0520 0%, #1a0a3e 50%, #0f0520 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "This is a digital consciousness—a living archive of knowledge, skills, and achievements. Every project, every line of code, every solution... preserved in crystallized memory.",
+        "dialogue": "This digital archive hosts the structured memory of {{name}}. Skills, projects, experience, and achievements — all compiled into a unified interactive system.",
         "choices": [
-          { "text": "Tell me about the creator", "nextScene": "about" },
-          { "text": "Show me the archives", "nextScene": "menu" }
+          { "text": "Learn about {{name}}", "nextScene": "about" },
+          { "text": "Return to main access point", "nextScene": "intro" }
         ]
       },
+
       "menu": {
         "id": "menu",
         "background": "linear-gradient(135deg, #0a1628 0%, #0f2350 50%, #0a1628 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "Three pathways lie before you. Choose wisely, seeker.",
+        "dialogue": "ACCESS PANEL LOADED. Select a category you wish to explore.",
         "choices": [
-          { "text": "Learn about Amr Mousa", "nextScene": "about" },
-          { "text": "View skill modules", "nextScene": "skills" },
-          { "text": "Access project files", "nextScene": "projects" }
+          { "text": "Profile Overview", "nextScene": "about" },
+          { "text": "Skills Matrix", "nextScene": "skills" },
+          { "text": "Project Archives", "nextScene": "projects" },
+          { "text": "Experience Timeline", "nextScene": "experience" },
+          { "text": "Contact {{name}}", "nextScene": "contact" },
+          { "text": "Back to Start", "nextScene": "intro" }
         ]
       },
+
       "about": {
         "id": "about",
         "background": "linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "Amr Mousa... Backend Engineer. Architect of scalable systems. Master of cloud infrastructures and AI integration. His code flows through distributed networks like digital blood through veins.",
+        "dialogue": "{{about}}",
         "choices": [
-          { "text": "What are his capabilities?", "nextScene": "skills" },
-          { "text": "Show me his work", "nextScene": "projects" },
-          { "text": "How can I reach him?", "nextScene": "contact" }
+          { "text": "Skills Matrix", "nextScene": "skills" },
+          { "text": "Project Archives", "nextScene": "projects" },
+          { "text": "Experience Timeline", "nextScene": "experience" },
+          { "text": "Contact {{name}}", "nextScene": "contact" },
+          { "text": "Back to Menu", "nextScene": "menu" }
         ]
       },
+
+      "experience": {
+        "id": "experience",
+        "background": "linear-gradient(135deg, #200a2e 0%, #36204e 50%, #200a2e 100%)",
+        "characterName": "NEXUS AI",
+        "dialogue": "LOADING EXPERIENCE TIMELINE... The system detected significant professional milestones: \n{{dynamicExperience}}",
+        "choices": [
+          { "text": "View Skills Matrix", "nextScene": "skills" },
+          { "text": "Explore Project Archive", "nextScene": "projects" },
+          { "text": "Back to Menu", "nextScene": "menu" }
+        ]
+      },
+
       "skills": {
         "id": "skills",
         "background": "linear-gradient(135deg, #0a2847 0%, #1a4870 50%, #0a2847 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "SCANNING SKILL MATRIX... Core competencies detected: Python, Node.js, PostgreSQL, Docker, Kubernetes, AWS. Advanced protocols: Machine Learning, System Architecture, Distributed Computing. All systems operational.",
+        "dialogue": "SCANNING SKILL MATRIX... Skills successfully mapped: \n{{dynamicSkills}}",
         "choices": [
-          { "text": "Impressive. Show me the projects", "nextScene": "projects" },
-          { "text": "What about experience?", "nextScene": "about" },
-          { "text": "I want to work with him", "nextScene": "contact" }
+          { "text": "Explore Project Archive", "nextScene": "projects" },
+          { "text": "Review Experience Timeline", "nextScene": "experience" },
+          { "text": "Back to Menu", "nextScene": "menu" }
         ]
       },
+
       "projects": {
         "id": "projects",
         "background": "linear-gradient(135deg, #0f1f2e 0%, #1f3f5e 50%, #0f1f2e 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "MISSION FILES UNLOCKED... E-Commerce Platform: 10K concurrent users, microservices architecture. AI Chat System: Real-time NLP processing. Analytics Dashboard: Predictive modeling with live data streams. Each mission: completed with precision.",
+        "dialogue": "PROJECT ARCHIVES ACCESSED. These missions demonstrate the ability to design systems, solve engineering challenges, and deliver production-ready results.\n{{dynamicProjects}}",
         "choices": [
-          { "text": "Remarkable work", "nextScene": "contact" },
-          { "text": "Tell me more about the skills", "nextScene": "skills" },
-          { "text": "Back to main menu", "nextScene": "menu" }
+          { "text": "Contact {{name}}", "nextScene": "contact" },
+          { "text": "View Skills Matrix", "nextScene": "skills" },
+          { "text": "Back to Menu", "nextScene": "menu" }
         ]
       },
+
       "contact": {
         "id": "contact",
         "background": "linear-gradient(135deg, #1a0f2e 0%, #3a1f5e 50%, #1a0f2e 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "The archive has revealed its secrets. Would you like to recruit this engineer for your next mission? Communication channels are open. Choose your preferred protocol.",
+        "dialogue": "COMMUNICATION CHANNELS READY. Choose how you want to reach {{name}}.",
         "choices": [
-          { "text": "📧 Email: amr@example.com", "nextScene": "end", "link": "mailto:amr@example.com" },
-          { "text": "💼 LinkedIn Profile", "nextScene": "end", "link": "https://linkedin.com/in/amrmousa" },
-          { "text": "💬 WhatsApp: Contact", "nextScene": "end", "link": "https://wa.me/201234567890" }
+          {
+            "text": "📧 Email: {{emailValue}}",
+            "nextScene": "end",
+            "link": "mailto:{{emailValue}}"
+          },
+          {
+            "text": "💼 LinkedIn Profile",
+            "nextScene": "end",
+            "link": "{{linkedinLink}}"
+          },
+          {
+            "text": "💬 WhatsApp",
+            "nextScene": "end",
+            "link": "https://wa.me/201234567890"
+          },
+          { "text": "Back to Menu", "nextScene": "menu" }
         ]
       },
+
       "end": {
         "id": "end",
         "background": "linear-gradient(135deg, #0a0a0a 0%, #1a1a3e 50%, #0a0a0a 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "CONNECTION ESTABLISHED. The journey through this digital realm concludes... but the real adventure awaits. May your paths align.",
+        "dialogue": "CONNECTION SUCCESSFUL. You have reached the end of this navigation cycle. The archive remains open for future exploration.",
         "choices": [
-          { "text": "Return to beginning", "nextScene": "intro" },
-          { "text": "Exit Story Mode", "nextScene": "exit" }
+          { "text": "Return to Beginning", "nextScene": "intro" },
+          { "text": "Back to Menu", "nextScene": "menu" }
         ]
       }
-    },
-    "metadata": {
-      "title": "Amr Mousa - Interactive Story Experience",
-      "description": "Explore Amr Mousa's portfolio through an immersive interactive story. Discover skills, projects, and experience in a unique narrative journey.",
-      "keywords": ["Interactive Portfolio", "Story Mode", "Backend Engineer", "Narrative Experience"],
-      "ogTitle": "Amr Mousa - Interactive Story Portfolio",
-      "ogDescription": "Experience a unique interactive narrative showcasing backend engineering expertise.",
-      "twitterTitle": "Amr Mousa - Story Mode Portfolio",
-      "twitterDescription": "Explore my portfolio through an immersive story experience.",
-      "canonicalUrl": "https://amrmousa.com/story"
     }
   }
 }
