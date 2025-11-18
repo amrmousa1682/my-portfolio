@@ -90,7 +90,7 @@ export function getTranslationVariables(
   }> || [];
   
   const dynamicProjects = projectsItems
-    .map((p) => `${p.title} - ${p.description} [${p.tech.join(", ")}] | Link: ${p.link}`)
+    .map((p) => `${p.title} - ${p.description} [${p.tech.join(", ")}]\nLink: ${p.link}`)
     .join("\n");
   
   return {

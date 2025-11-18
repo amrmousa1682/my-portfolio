@@ -1,6 +1,6 @@
-import { Mail, Github, Linkedin } from "lucide-react";
 import { MotionH1, MotionSection } from "@/components/motion";
 import styles from "../ClassicMode.module.css";
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 interface ClassicContactProps {
   title: string;
@@ -11,6 +11,7 @@ interface ClassicContactProps {
   githubValue: string;
   linkedin: string;
   linkedinValue: string;
+  whatsapLink: string;
 }
 
 export async function ClassicContact({
@@ -22,6 +23,7 @@ export async function ClassicContact({
   githubValue,
   linkedin,
   linkedinValue,
+  whatsapLink,
 }: ClassicContactProps) {
   return (
     <MotionSection className={styles.section}>
@@ -31,7 +33,7 @@ export async function ClassicContact({
           <p className={styles.subtitle}>{subtitle}</p>
           <div className={styles.contactGrid}>
             <a href={`mailto:${emailValue}`} className={styles.contactLink}>
-              <Mail className={styles.contactIcon} />
+              <FaEnvelope size={24} className={styles.contactIcon} />
               <span>{email}</span>
             </a>
             <a
@@ -40,7 +42,7 @@ export async function ClassicContact({
               rel="noopener noreferrer"
               className={styles.contactLink}
             >
-              <Github className={styles.contactIcon} />
+              <FaGithub size={24} className={styles.contactIcon} />
               <span>{github}</span>
             </a>
             <a
@@ -49,8 +51,17 @@ export async function ClassicContact({
               rel="noopener noreferrer"
               className={styles.contactLink}
             >
-              <Linkedin className={styles.contactIcon} />
+              <FaLinkedin size={24} className={styles.contactIcon} />
               <span>{linkedin}</span>
+            </a>
+            <a
+              href={whatsapLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactLink}
+            >
+              <FaWhatsapp size={24} className={styles.contactIcon} />
+              <span>WhatsApp</span>
             </a>
           </div>
         </div>

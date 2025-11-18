@@ -60,7 +60,7 @@
     "contactEmail": "Email",
     "contactGithub": "GitHub",
     "contactLinkedin": "LinkedIn",
-    "footerCopyright": "© 2025 Amr Mousa. All rights reserved.",
+    "footerCopyright": "© 2025 {{name}}. All rights reserved.",
     "footerMadeWith": "Made with passion and code"
   },
   "storyMode": {
@@ -69,15 +69,18 @@
     "skipText": "Click to skip..."
   },
   "data": {
-    "name": "Your Name",
-    "title": "job title",
-    "subtitle": "bio about you",
-    "about": "intoduction about yourself",
-    "seoKeywords":[
+    "name": "Amr Mousa",
+    "title": "Software Engineer",
+    "subtitle": "Software Engineer turning ideas into production-ready systems",
+    "about": "a software engineer with a strong focus on backend development, clean architecture, and scalable system design. enjoy turning complex problems into clear, maintainable solutions while continuously learning new tools and technologies. With hands-on experience at Fawry, he have worked on refactoring legacy systems, improving reliability, and contributing to production-ready applications.",
+    "seoKeywords": [
       "Full Stack Developer",
       "Web Development",
       "Node.js",
       "React",
+      "Java",
+      "Spring Boot",
+      "Microservices",
       "AWS",
       "Cloud Solutions",
       "AI Integration",
@@ -85,93 +88,70 @@
     ],
     "experienceItems": [
       {
-        "company": "company name",
-        "position": "position",
-        "period": "date range ex:2022 - Present",
-        "description": "description of the work done in this position"
-      },
-      {
-        "company": "company name",
-        "position": "position",
-        "period": "date range ex:2022 - Present",
-        "description": "description of the work done in this position"
-      },
-      {
-        "company": "company name",
-        "position": "position",
-        "period": "date range ex:2022 - Present",
-        "description": "description of the work done in this position"
+        "company": "Fawry",
+        "position": "Software Engineer",
+        "period": "2024 - Present",
+        "description": "Contributing to the revamp project by refactoring legacy code, implementing clean and modern development practices, and improving system stability. Collaborating with multiple teams to resolve production issues and enhance the performance and reliability of core services. Technologies: Java, Spring Boot, Angular, EJB, JSP."
       }
     ],
     "skillsCategories": [
       {
-        "name": "category name",
-        "items": ["skill 1", "skill 2", "skill 3"]
+        "name": "Programming Languages",
+        "items": ["Java", "C++", "JavaScript", "TypeScript"]
       },
       {
-        "name": "category name",
-        "items": ["skill 1", "skill 2", "skill 3"]
+        "name": "Backend & Frameworks",
+        "items": ["Spring Boot", "Node.js", "Microservices", "REST APIs"]
       },
       {
-        "name": "category name",
-        "items": ["skill 1", "skill 2", "skill 3"]
+        "name": "Frontend & Tools",
+        "items": ["Angular", "React", "Git", "PostgreSQL"]
       }
     ],
     "projectsItems": [
       {
-        "title": "project title",
-        "description": "short description of the project",
-        "tech": ["tech 1", "tech 2", "tech 3"],
-        "link": "link to the project",
-        "gif": "/project.webp"
+        "title": "E-commerce Microservices Platform",
+        "description": "A microservices-based e-commerce platform developed collaboratively during the Fawry internship.",
+        "tech": ["Spring Boot", "PostgreSQL", "Kafka", "Kubernetes"],
+        "link": "https://github.com/Fawry-Intern-Round4",
+        "gif": "/not-found.webp"
       },
       {
-        "title": "project title",
-        "description": "short description of the project",
-        "tech": ["tech 1", "tech 2", "tech 3"],
-        "link": "link to the project",
-        "gif": "/project.webp"
+        "title": "Password Manager CLI Tool",
+        "description": "A cross-platform command-line tool for secure password storage with AES encryption.",
+        "tech": ["Node.js", "AES Encryption"],
+        "link": "https://github.com/amrmousa1682/password-manager",
+        "gif": "/password-manager.gif"
       },
       {
-        "title": "project title",
-        "description": "short description of the project",
-        "tech": ["tech 1", "tech 2", "tech 3"],
-        "link": "link to the project",
-        "gif": "/project.webp"
+        "title": "Snake Game AI",
+        "description": "A C++ snake game with a custom AI using BFS and survival logic to navigate safely.",
+        "tech": ["C++", "SFML", "BFS Algorithm"],
+        "link": "https://github.com/amrmousa1682/snake-ai",
+        "gif": "/snake.gif"
       }
     ],
     "testimonialsTitle": "Testimonials",
     "testimonialsItems": [
       {
-        "name": "Person Name",
-        "role": "Person Role",
-        "text": "Testimonial text goes here.",
-        "image": "/avatar.webp"
-      },
-      {
-        "name": "Person Name",
-        "role": "Person Role",
-        "text": "Testimonial text goes here.",
-        "image": "/avatar.webp"
-      },
-      {
-        "name": "Person Name",
-        "role": "Person Role",
-        "text": "Testimonial text goes here.",
-        "image": "/avatar.webp"
+        "name": "Ahmed Khalid",
+        "role": "DevOps Engineer",
+        "text": "He consistently strived to improve the efficiency of his solutions and actively collaborated with teammates to find the most efficient solutions for their tasks.",
+        "image": "/male.webp"
       }
     ],
     "emailValue": "amrmousa1682@gmail.com",
     "githubLink": "https://github.com/amrmousa1682",
-    "linkedinLink": "https://www.linkedin.com/in/amrmousa1682"
+    "linkedinLink": "https://www.linkedin.com/in/amrmousa1682",
+    "whatsappLink": "https://wa.me/201026478513"
   },
- "story": {
+  "story": {
     "scenes": {
       "intro": {
         "id": "intro",
         "background": "linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "BOOT SEQUENCE INITIATED...\nWelcome to the digital archives of {{name}},\na {{title}} specializing in {{subtitle}}. How can I assist you?",
+        "dialogue": "BOOT SEQUENCE INITIATED...\nWelcome to the digital archives of {{name}},\n{{subtitle}}. How can I assist you?",
         "choices": [
           { "text": "Tell me about {{name}}", "nextScene": "about" },
           { "text": "Show navigation panel", "nextScene": "menu" },
@@ -262,19 +242,24 @@
         "dialogue": "COMMUNICATION CHANNELS READY. Choose how you want to reach {{name}}.",
         "choices": [
           {
-            "text": "📧 Email: {{emailValue}}",
+            "text": "Send Email",
             "nextScene": "end",
             "link": "mailto:{{emailValue}}"
           },
           {
-            "text": "💼 LinkedIn Profile",
+            "text": "LinkedIn Profile",
             "nextScene": "end",
             "link": "{{linkedinLink}}"
           },
           {
-            "text": "💬 WhatsApp",
+            "text": "WhatsApp Contact",
             "nextScene": "end",
-            "link": "https://wa.me/201234567890"
+            "link": "{{whatsappLink}}"
+          },
+          { 
+            "text": "GitHub",
+            "nextScene": "end",
+            "link": "{{githubLink}}"
           },
           { "text": "Back to Menu", "nextScene": "menu" }
         ]

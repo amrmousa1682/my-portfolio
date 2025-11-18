@@ -63,6 +63,7 @@ export default async function ClassicMode() {
             githubValue={t('data.githubLink')}
             linkedin={t('classicMode.contactLinkedin')}
             linkedinValue={t('data.linkedinLink')}
+            whatsapLink={t('data.whatsappLink')}
           />
         </main> 
 

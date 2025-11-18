@@ -15,7 +15,7 @@ export async function ClassicHero({ name, title, subtitle }: ClassicHeroProps) {
         <MotionDiv className={styles.avatar}>
           <div className={styles.avatarInner}>
             <Image
-              src="/avatar.webp"
+              src="/me.png"
               alt={name}
               width={180}
               height={180}
