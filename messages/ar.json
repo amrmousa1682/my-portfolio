@@ -175,8 +175,8 @@
         "characterName": "NEXUS AI",
         "dialogue": "السيستم ده معمول عشان يجمع كل حاجة تخص {{name}} في مكان واحد — خبرته، شغله، مشاريعه، ومهاراته — كله مترتّب بشكل بسيط وسهل تتصفّحه.",
         "choices": [
-          { "text": "طب وريني معلومات عنه", "nextScene": "about" },
-          { "text": "ارجع للواجهة الأساسية", "nextScene": "intro" }
+          { "text": "احكيلي عن {{name}}", "nextScene": "about" },
+          { "text": "رجعني للبداية", "nextScene": "intro" }
         ]
       },
 
@@ -186,11 +186,11 @@
         "characterName": "NEXUS AI",
         "dialogue": "تمام… القايمة جاهزة. اختار اللي حابب تستكشفه.",
         "choices": [
-          { "text": "نبذة عنه", "nextScene": "about" },
-          { "text": "مهاراته", "nextScene": "skills" },
-          { "text": "مشاريعه", "nextScene": "projects" },
-          { "text": "خبراته", "nextScene": "experience" },
-          { "text": "عايز أتواصل معاه", "nextScene": "contact" },
+          { "text": "احكيلي عن {{name}}", "nextScene": "about" },
+          { "text": "عرض المهارات", "nextScene": "skills" },
+          { "text": "عرض المشاريع", "nextScene": "projects" },
+          { "text": "عرض الخبرات", "nextScene": "experience" },
+          { "text": "طرق التواصل", "nextScene": "contact" },
           { "text": "رجعني للبداية", "nextScene": "intro" }
         ]
       },
@@ -205,7 +205,7 @@
           { "text": "عرض المشاريع", "nextScene": "projects" },
           { "text": "عرض الخبرات", "nextScene": "experience" },
           { "text": "طرق التواصل", "nextScene": "contact" },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       },
 
@@ -217,7 +217,7 @@
         "choices": [
           { "text": "عرض المهارات", "nextScene": "skills" },
           { "text": "عرض المشاريع", "nextScene": "projects" },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       },
 
@@ -227,9 +227,9 @@
         "characterName": "NEXUS AI",
         "dialogue": "تمام… عملت مسح للمهارات وده اللي لقيته:\n{{dynamicSkills}}",
         "choices": [
-          { "text": "روّحني للمشاريع", "nextScene": "projects" },
+          { "text": "عرض المشاريع", "nextScene": "projects" },
           { "text": "عرض الخبرات", "nextScene": "experience" },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       },
 
@@ -239,9 +239,9 @@
         "characterName": "NEXUS AI",
         "dialogue": "وصلت لأرشيف المشاريع…\nاللي قدامك ده جزء من شغل {{name}} اللي اشتغل عليه وقدر يطلّعه بشكل عملي وجاهز للاستخدام.\n{{dynamicProjects}}",
         "choices": [
-          { "text": "تواصل مع {{name}}", "nextScene": "contact" },
+          { "text": "طرق التواصل", "nextScene": "contact" },
           { "text": "عرض المهارات", "nextScene": "skills" },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       },
 
@@ -270,7 +270,7 @@
             "nextScene": "end",
             "link": "{{githubLink}}"
           },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       },
 
@@ -281,7 +281,7 @@
         "dialogue": "تمام… القناة اتفتحت. لو حابب ترجع تاني وتستكشف باقي الأرشيف، أنا دايمًا جاهز.",
         "choices": [
           { "text": "رجعني للبداية", "nextScene": "intro" },
-          { "text": "رجوع للقايمة", "nextScene": "menu" }
+          { "text": "رجعني للقايمة", "nextScene": "menu" }
         ]
       }
     }
