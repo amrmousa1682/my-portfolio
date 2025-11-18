@@ -16,6 +16,26 @@ export function generateMetadataFromTranslations(t: TranslationFunction){
         keywords: t.raw('keywords'),
         authors: [{ name: t('name') }],
         creator: t('name'),
+        openGraph: {
+            title: t('title'),
+            description: t('description'),
+            url: t('ogUrl'),
+            siteName: t('ogSiteName'),
+            images: [{
+                url: t('ogImage'),
+                width: 1200,
+                height: 630,
+                alt: t('ogImageAlt'),
+            }],
+            locale: t('ogLocale'),
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: t('title'),
+            description: t('description'),
+            images: [t('ogImage')],
+        },
     }
 }
 

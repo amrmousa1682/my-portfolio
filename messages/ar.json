@@ -4,6 +4,11 @@
     "title": "{{name}} - {{title}}",
     "description": "{{about}}",
     "keywords": "{{seoKeywords}}",
+    "ogUrl": "{{siteUrl}}/ar",
+    "ogSiteName": "ملف {{name}} الشخصي",
+    "ogImage": "{{siteUrl}}/og-image.png",
+    "ogImageAlt": "{{name}} - مهندس برمجيات",
+    "ogLocale": "ar_AR",
     "person": {
       "name": "{{name}}",
       "jobTitle": "{{title}}",
@@ -156,7 +161,7 @@
         "id": "intro",
         "background": "linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 50%, #0a0a0a 100%)",
         "characterName": "NEXUS AI",
-        "dialogue": "سيستم التشغيل بيقوم…\nأهلاً بيك في الأرشيف الرقمي بتاع {{name}},\n{{subtitle}}. تحب نبدأ منين؟",
+        "dialogue": "يتم التشغيل…\nأهلاً بيك في الأرشيف الرقمي بتاع {{name}},\n{{subtitle}}. تحب نبدأ منين؟",
         "choices": [
           { "text": "احكيلي عن {{name}}", "nextScene": "about" },
           { "text": "افتحلي قايمة الاختيارات", "nextScene": "menu" },

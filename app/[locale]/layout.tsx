@@ -5,6 +5,8 @@ import { AnimatedBackground } from "../../components/AnimatedBackground";
 import { LanguageSwitcher } from "../../components/LanguageSwitcher";
 import { notFound } from 'next/navigation';
 import { routing } from "@/i18n/routing";
+import { getTranslations } from "next-intl/server";
+import { generateMetadataFromTranslations } from "@/components/shared";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -12,6 +14,10 @@ const cairo = Cairo({
   display: "swap",
   weight: ["400", "500", "700"], // optional: choose what you need
 });
+
+export async function generateMetadata() {
+  return generateMetadataFromTranslations(await getTranslations("seo"));
+}
 
 export default async function RootLayout({
   children,

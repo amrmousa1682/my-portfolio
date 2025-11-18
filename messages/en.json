@@ -4,6 +4,11 @@
     "title": "{{name}} - {{title}}",
     "description": "{{about}}",
     "keywords": "{{seoKeywords}}",
+    "ogUrl": "{{siteUrl}}/en",
+    "ogSiteName": "{{name}} Portfolio",
+    "ogImage": "{{siteUrl}}/og-image.png",
+    "ogImageAlt": "{{name}} - Software Engineer Portfolio",
+    "ogLocale": "en_US",
     "person": {
       "name": "{{name}}",
       "jobTitle": "{{title}}",
