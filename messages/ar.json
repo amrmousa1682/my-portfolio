@@ -1,14 +1,24 @@
 {
   "seo": {
+    "siteUrl": "{{siteUrl}}",
     "name": "{{name}}",
-    "title": "{{name}} - {{title}}",
-    "description": "{{about}}",
     "keywords": "{{seoKeywords}}",
-    "ogUrl": "{{siteUrl}}/ar",
     "ogSiteName": "ملف {{name}} الشخصي",
     "ogImage": "{{siteUrl}}/og-image.png",
     "ogImageAlt": "{{name}} - مهندس برمجيات",
     "ogLocale": "ar_AR",
+    "home": {
+      "title": "{{name}} - الملف الشخصي | مهندس برمجيات",
+      "description": "استكشف الملف التفاعلي لـ {{name}}، مهندس برمجيات متخصص في تطوير الباك إند والأنظمة القابلة للتوسع."
+    },
+    "classic": {
+      "title": "{{name}} - الملف الكلاسيكي | المشاريع والخبرات",
+      "description": "اطّلع على خبرات ومهارات ومشاريع {{name}} في تنسيق ملف تقليدي. مهندس باك إند خبير في Java و Spring Boot والمايكروسيرفيسز."
+    },
+    "story": {
+      "title": "{{name}} - وضع القصة التفاعلي | اكتشف رحلتي",
+      "description": "عيش تجربة ملف {{name}} من خلال واجهة تفاعلية مبنية على القصص. اكتشف المشاريع والمهارات والرحلة المهنية بطريقة فريدة."
+    },
     "person": {
       "name": "{{name}}",
       "jobTitle": "{{title}}",
