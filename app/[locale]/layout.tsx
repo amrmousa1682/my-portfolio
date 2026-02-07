@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { generateMetadataFromTranslations } from "@/components/shared";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -21,10 +22,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  return generateMetadataFromTranslations(
+  const metadata = generateMetadataFromTranslations(
     await getTranslations("seo"),
     { locale, pageType: 'home' }
   );
+  return {
+    ...metadata,
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://amrmousa.vercel.app'),
+  };
 }
 
 export default async function RootLayout({
@@ -49,6 +54,7 @@ export default async function RootLayout({
             <div className="relative z-10">{children}</div>
           </div>
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
