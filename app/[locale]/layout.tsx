@@ -15,8 +15,16 @@ const cairo = Cairo({
   weight: ["400", "500", "700"], // optional: choose what you need
 });
 
-export async function generateMetadata() {
-  return generateMetadataFromTranslations(await getTranslations("seo"));
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return generateMetadataFromTranslations(
+    await getTranslations("seo"),
+    { locale, pageType: 'home' }
+  );
 }
 
 export default async function RootLayout({

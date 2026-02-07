@@ -9,17 +9,41 @@ export interface JSONLDSchema {
   [key: string]: unknown;
 }
 
-export function generateMetadataFromTranslations(t: TranslationFunction){
+export interface MetadataOptions {
+  locale: string;
+  pageType?: 'home' | 'classic' | 'story';
+}
+
+export function generateMetadataFromTranslations(t: TranslationFunction, options: MetadataOptions){
+    const { locale, pageType = 'home' } = options;
+    const baseUrl = t('siteUrl');
+    
+    // Build page-specific paths
+    const pagePath = pageType === 'home' ? '' : `/${pageType}`;
+    const canonicalUrl = `${baseUrl}/${locale}${pagePath}`;
+    
+    // Generate alternates for all locales
+    const locales = ['en', 'ar'];
+    const alternateLanguages: Record<string, string> = {};
+    
+    locales.forEach(loc => {
+      alternateLanguages[loc] = `${baseUrl}/${loc}${pagePath}`;
+    });
+    
     return {
-        title: t('title'),
-        description: t('description'),
+        title: t(`${pageType}.title`),
+        description: t(`${pageType}.description`),
         keywords: t.raw('keywords'),
         authors: [{ name: t('name') }],
         creator: t('name'),
+        alternates: {
+            canonical: canonicalUrl,
+            languages: alternateLanguages,
+        },
         openGraph: {
-            title: t('title'),
-            description: t('description'),
-            url: t('ogUrl'),
+            title: t(`${pageType}.title`),
+            description: t(`${pageType}.description`),
+            url: canonicalUrl,
             siteName: t('ogSiteName'),
             images: [{
                 url: t('ogImage'),
@@ -32,8 +56,8 @@ export function generateMetadataFromTranslations(t: TranslationFunction){
         },
         twitter: {
             card: 'summary_large_image',
-            title: t('title'),
-            description: t('description'),
+            title: t(`${pageType}.title`),
+            description: t(`${pageType}.description`),
             images: [t('ogImage')],
         },
     }

@@ -1,14 +1,24 @@
 {
   "seo": {
+    "siteUrl": "{{siteUrl}}",
     "name": "{{name}}",
-    "title": "{{name}} - {{title}}",
-    "description": "{{about}}",
     "keywords": "{{seoKeywords}}",
-    "ogUrl": "{{siteUrl}}/en",
     "ogSiteName": "{{name}} Portfolio",
     "ogImage": "{{siteUrl}}/og-image.png",
     "ogImageAlt": "{{name}} - Software Engineer Portfolio",
     "ogLocale": "en_US",
+    "home": {
+      "title": "{{name}} - Portfolio | Software Engineer",
+      "description": "Explore the interactive portfolio of {{name}}, a software engineer specializing in backend development, clean architecture, and scalable systems."
+    },
+    "classic": {
+      "title": "{{name}} - Classic Portfolio | Projects & Experience",
+      "description": "View {{name}}'s professional experience, skills, and projects in a traditional portfolio format. Backend engineer with expertise in Java, Spring Boot, and microservices."
+    },
+    "story": {
+      "title": "{{name}} - Interactive Story Mode | Explore My Journey",
+      "description": "Experience {{name}}'s portfolio through an interactive story-driven interface. Discover projects, skills, and professional journey in a unique way."
+    },
     "person": {
       "name": "{{name}}",
       "jobTitle": "{{title}}",
